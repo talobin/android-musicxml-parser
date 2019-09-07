@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ScanMusicPro.iml" filepath="$PROJECT_DIR$/ScanMusicPro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autovalue/autovalue.iml" filepath="$PROJECT_DIR$/autovalue/autovalue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/buildSrc.iml" filepath="$PROJECT_DIR$/buildSrc/buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/converters/converters.iml" filepath="$PROJECT_DIR$/converters/converters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/converters/date-rfc3339/date-rfc3339.iml" filepath="$PROJECT_DIR$/converters/date-rfc3339/date-rfc3339.iml" />
+      <module fileurl="file://$PROJECT_DIR$/converters/htmlescape/htmlescape.iml" filepath="$PROJECT_DIR$/converters/htmlescape/htmlescape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processor-common/processor-common.iml" filepath="$PROJECT_DIR$/processor-common/processor-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit-converter/retrofit-converter.iml" filepath="$PROJECT_DIR$/retrofit-converter/retrofit-converter.iml" />
+    </modules>
+  </component>
+</project>

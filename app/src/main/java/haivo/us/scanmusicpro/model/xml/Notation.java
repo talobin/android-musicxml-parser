@@ -13,7 +13,7 @@ public class Notation {
     List<Slur> slurList;
 
     @Element
-    //Articulations articulations;
+    Articulations articulations;
 
     public List<Tied> getTiedList() {
         return tiedList;
@@ -21,7 +21,7 @@ public class Notation {
     public List<Slur> getSlurList() {
         return slurList;
     }
-    //public Articulations getArticulations() {
-    //    return articulations;
-    //}
+    public Articulations getArticulations() {
+        return articulations;
+    }
 }
