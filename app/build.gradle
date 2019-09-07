@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-kapt'
-//apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
@@ -41,7 +41,7 @@ dependencies {
     implementation 'com.tickaroo.tikxml:retrofit-converter:0.8.16-SNAPSHOT'
     implementation 'com.tickaroo.tikxml:annotation:0.8.16-SNAPSHOT'
     implementation 'com.tickaroo.tikxml:core:0.8.16-SNAPSHOT'
-    annotationProcessor 'com.tickaroo.tikxml:processor:0.8.16-SNAPSHOT'
+    kapt 'com.tickaroo.tikxml:processor:0.8.16-SNAPSHOT'
 
 //    api project(path: ':retrofit-converter')
 //    api project(path: ':core')

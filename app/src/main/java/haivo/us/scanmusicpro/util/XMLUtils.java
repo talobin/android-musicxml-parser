@@ -4,9 +4,6 @@ import android.os.Environment;
 import android.util.Log;
 import com.tickaroo.tikxml.TikXml;
 import com.tickaroo.tikxml.XmlReader;
-import haivo.us.scanmusicpro.model.xml.Measure;
-import haivo.us.scanmusicpro.model.xml.Note;
-import haivo.us.scanmusicpro.model.xml.Part;
 import haivo.us.scanmusicpro.model.xml.Pitch;
 import haivo.us.scanmusicpro.model.xml.ScorePartWise;
 import java.io.File;
@@ -96,7 +93,7 @@ public class XMLUtils {
 
     public static List<Pitch> extractPitchList(int partIndex, ScorePartWise scorePartWise) {
         List<Pitch> result = new ArrayList<>();
-        if (!scorePartWise.getParts().isEmpty() && scorePartWise.getParts().size() > partIndex) {
+        if (scorePartWise.getParts()!=null && scorePartWise.getParts().size() > partIndex) {
             final Part selectedPart = scorePartWise.getParts().get(partIndex);
             final List<Measure> measureList = selectedPart.getMeasureList();
             if (measureList != null && measureList.size() > 0) {
