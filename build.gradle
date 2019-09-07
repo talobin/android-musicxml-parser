@@ -17,11 +17,8 @@ buildscript {
         autoService ="com.google.auto.service:auto-service:1.0-rc2"
         kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
         kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
-//        kotlinTestJunit = "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion"
-//        compileTesting = "com.google.testing.compile:compile-testing:1.0-SNAPSHOT"
         assertj = "org.assertj:assertj-core:1.7.0"
         truth = "com.google.truth:truth:0.30"
-//        mockito = "org.mockito:mockito-core:1.9.5"
         javaPoet = "com.squareup:javapoet:1.7.0"
         guava = "com.google.guava:guava:20.0-rc1"
         retrofit = "com.squareup.retrofit2:retrofit:2.0.0"
@@ -39,8 +36,6 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$androidGradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 plugins {

@@ -96,7 +96,7 @@ public class XMLUtils {
 
     public static List<Pitch> extractPitchList(int partIndex, ScorePartWise scorePartWise) {
         List<Pitch> result = new ArrayList<>();
-        if (scorePartWise.getParts() != null && scorePartWise.getParts().size() > partIndex) {
+        if (!scorePartWise.getParts().isEmpty() && scorePartWise.getParts().size() > partIndex) {
             final Part selectedPart = scorePartWise.getParts().get(partIndex);
             final List<Measure> measureList = selectedPart.getMeasureList();
             if (measureList != null && measureList.size() > 0) {
