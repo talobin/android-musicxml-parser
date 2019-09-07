@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "haivo.us.scanmusicpro"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            // Specifies the ABI configurations of your native
+            // libraries Gradle should build and package with your APK.
+            abiFilters 'armeabi'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs 'lib', 'lib/armeabi'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'androidx.test:runner:1.1.1'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.tickaroo.tikxml:retrofit-converter:0.8.16-SNAPSHOT'
+    implementation 'com.tickaroo.tikxml:annotation:0.8.16-SNAPSHOT'
+    implementation 'com.tickaroo.tikxml:core:0.8.16-SNAPSHOT'
+    annotationProcessor 'com.tickaroo.tikxml:processor:0.8.16-SNAPSHOT'
+
+//    api project(path: ':retrofit-converter')
+//    api project(path: ':core')
+//    api project(path: ':annotation')
+//    api project(path: ':processor')
+}
